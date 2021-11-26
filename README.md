@@ -1,18 +1,18 @@
 # Criar_triangulos
 
 	#include <stdio.h>
-	
+
         int main() {
-	
+
         int M, N, i, j, k;
         char X = 'A', Y = 'B';
-	
-        printf("quantos triangulos serao formados: ");
+
+        printf("Quantos triangulos serao formados: ");
         scanf("%d", &M);
         printf("Quantas linhas terao o triangulo: ");
         scanf("%d", &N);
         printf("\n");
-	
+
         i=1;
         while(i<=M) {
                 j=1;
@@ -31,7 +31,7 @@
         printf ("\n");
         i=i+1;
         }
-	
+
         return 0;
-	
+
         }
