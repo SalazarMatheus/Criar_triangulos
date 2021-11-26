@@ -2,17 +2,30 @@
 
 	#include <stdio.h>
 
-        int main() {
+	int main() {
 
         int M, N, i, j, k;
         char X = 'A', Y = 'B';
 
-        printf("Quantos triangulos serao formados: ");
+        printf("Quantos triângulos serão formados: ");
         scanf("%d", &M);
-        printf("Quantas linhas terao o triangulo: ");
-        scanf("%d", &N);
-        printf("\n");
 
+	if(M<=0)
+		while(M<=0) {
+			printf("Número inválido, tente outro valor que seja positivo ou diferente de 0: ");
+			scanf("%d", &M);
+		}
+
+        printf("Quantas linhas terão o triangulo: ");
+        scanf("%d", &N);
+
+	if(N<=0)
+		while(N<=0) {
+			printf("Número inválido, tente outro valor que seja positivo ou diferente de 0: ");
+			scanf("%d", &N);
+		}
+
+        printf("\n");
         i=1;
         while(i<=M) {
                 j=1;
@@ -33,5 +46,4 @@
         }
 
         return 0;
-
-        }
+	}
